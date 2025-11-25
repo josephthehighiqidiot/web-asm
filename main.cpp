@@ -1,9 +1,21 @@
 #include <iostream>
 #include <string>
 #include <limits>
-class class1 {
+class io {
     public:
-        void hello() {
+        void check() {
+            helloworld();
+            test();
+            test2();
+        }
+        void requestInput() {
+            std::string name;
+            std::cout << "Enter your name: ";
+            std::getline(std::cin, name);
+            std::cout << "Hello, " << name << "!" << std::endl;
+        }
+    private:
+        void helloworld() {
             std::cout << "Hello world!" << std::endl;
         }
         void test() {
@@ -14,23 +26,14 @@ class class1 {
             {
             std::cout << "testing" << i << std::endl;
             }
-        }
-        void requestInput() {
-            std::string input;
-            std::cout << "type somthing:" << std::endl;
-            if (input == "") {
-                std::getline (std::cin, input);
-            }
-            std::cout << "You entered: " << input << std::endl;
+  
         }
 };
 
 int main() {
-    class1 class1;
+    io io;
     std::string name;
-    class1.hello();
-    class1.test();
-    class1.test2();
-    class1.requestInput();
+    io.check();
+    io.requestInput();
     return 0;
 }
