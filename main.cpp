@@ -1,14 +1,17 @@
 #include <iostream>
-class Example {
+class class1 {
     public:
-        void display() {
+        void hello() {
+            std::cout << "Hello world!" << std::endl;
+        }
+        void test() {
             std::cout << "This is an example class." << std::endl;
         }
-}
+};
 
 int main() {
-    Example ex;
-    std::cout << "Hello, World!" << std::endl;
-    ex.display();
+    class1 class1;
+    class1.hello();
+    class1.test();
     return 0;
 }
