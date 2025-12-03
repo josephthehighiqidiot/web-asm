@@ -8,7 +8,7 @@
 #include <stdexcept>
 #include <array>
 #include <vector>
-#include <beemoviescript.h>
+#include "beemoviescript.h"
 
 // #include "framework.h"
 #ifdef _WIN32
